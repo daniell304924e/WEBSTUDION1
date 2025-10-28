@@ -1,0 +1,33 @@
+.types {
+  margin: 0 auto;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  &__list {
+    @extend %flex;
+    gap: 8px;
+    width: 575px;
+    margin: 0 auto;
+  }
+  &__btn {
+    background-color: $backround-color2;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: $pretitle-color;
+    padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: $title-color;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

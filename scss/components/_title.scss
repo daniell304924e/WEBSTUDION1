@@ -1,0 +1,14 @@
+.section-title {
+  font-family: $roboto-font;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+  text-align: center;
+  color: $pretitle-color;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}

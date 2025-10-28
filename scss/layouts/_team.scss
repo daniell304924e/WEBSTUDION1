@@ -1,0 +1,86 @@
+.team-name {
+  font-family: $roboto-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-align: center;
+  color: $pretitle-color;
+}
+.team-profession {
+  font-family: $roboto-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-align: center;
+}
+.team {
+  background-color: $backround-color2;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.team-item {
+  background-color: $title-color;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.team-list {
+  @extend %flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.team-item {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+.team-img {
+  display: block;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+.team-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.team-profession {
+  margin-bottom: 16px;
+}
+.team-media-list {
+  @extend %flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  margin-left: 32px;
+}
+.team-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-media {
+  @include svg-link(#fff);
+}
+.team-media:focus,
+.team-media:hover {
+  background-color: $accent-color;
+}
+.team-media:focus .team-svg,
+.team-media:hover .team-svg {
+  fill: $title-color;
+}

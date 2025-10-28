@@ -1,0 +1,12 @@
+.logo > span,
+.footer-logo > span {
+  color: $accent-color;
+}
+.logo {
+  color: $black-color;
+  font-family: $raleway-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 3%;
+}

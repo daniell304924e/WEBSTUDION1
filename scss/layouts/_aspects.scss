@@ -1,0 +1,37 @@
+.aspects {
+  padding-top: 94px;
+  
+    display: none;
+  
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width:1200px){
+    display: block;
+  }
+}
+.aspects-item {
+  position: relative;
+  margin-bottom: 94px;
+  height: 294px;
+}
+
+.aspects-list {
+  @extend %flex;
+  gap: 30px;
+}
+.aspects-title {
+  font-family: $roboto-font;
+  color: $title-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  background-color: #2f303acc;
+  padding: 27px 0px;
+  width: 100%;
+  bottom: 0;
+}

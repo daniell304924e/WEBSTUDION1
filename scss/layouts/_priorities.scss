@@ -1,0 +1,68 @@
+.priorities {
+  margin: 0 auto;
+  margin-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 94px;
+  }
+}
+.priorities-title {
+  font-family: $roboto-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  color: $pretitle-color;
+  margin-bottom: 10px;
+}
+.priorities-text {
+  margin-right: 30px;
+}
+.priorities-list {
+  @extend %flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.priorities-item {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+.priorities-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: $backround-color2;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+.priorities-item:nth-child(1):before {
+  background-image: url(../images/antenna.png);
+}
+.priorities-item:nth-child(2):before {
+  background-image: url(../images/clock.png);
+}
+.priorities-item:nth-child(3):before {
+  background-image: url(../images/diagram.png);
+}
+.priorities-item:nth-child(4):before {
+  background-image: url(../images/astronaut.png);
+}
